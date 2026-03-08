@@ -110,7 +110,7 @@ int main()
         case 1:
         {
             modePage:
-            cout<<endl<<"Choose mode:\n1. Regular\n2. Ranked\n3. Best of 3";
+            cout<<endl<<"Choose mode:\n1. Regular\n2. Ranked\n3. Best of 3\n4. Main menu";
             cout<<endl<<endl<< "\033[33mI choose: \033[0m";
             cin >> modeString;
             cin.ignore();
@@ -236,6 +236,11 @@ int main()
                     t1.animation();
                     t1.bestOfThree(participantNames);
                     t1.bestOfThreeAnnouncement(participantNames);
+                    break;
+                }
+                case 4:
+                {
+                    goto startPage;
                     break;
                 }
                 default:
